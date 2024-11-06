@@ -1,0 +1,34 @@
+.menubar{border: 1px solid rgba(24, 24, 24, .5);}
+.menubarList{display: none;}
+.headerOuterMost{display: flex; background: rgba(10, 11, 10); top: 70px; padding: 8px; left: 65px;}
+.headerLogo{height: 27px;}
+.logo img{height: 100%;}
+.bookTableBtn{padding: 14px 16px; background: #18181880; border: 1px solid #efe7d24d ;}
+.navmenu{padding: 2px; background: #18181880; border: 1px solid #efe7d24d; }
+.headerListItem:hover{color: #f5f2eab3; 
+  .firstSpan{transform: translateY(11px); opacity: 0;} 
+  .thirdSpan{transform: translateY(-11px); opacity: 0;}}
+.headerItem{padding: 12px; border: 1px solid #0000;}
+.bookTableBtn:hover{background: #efe7d224;}
+.headerItem:hover{border: 1px solid #efe7d24d; transition: all .3s ease-in-out; -moz-transition: all .3s ease-in-out; -webkit-transition: all .3s ease-in-out; -o-transition: all .3s ease-in-out;}
+.headerListItem{height: 40px; padding: 6px;}
+.firstSpan, .secondSpan, .thirdSpan {border: 1px solid #EFE7D2; width: 28px;}
+.firstSpan{margin-top: 2px;}
+
+/* responsive */
+@media (max-width:1200px) {
+.headerOuterMost{display: flex; background: rgba(10, 11, 10); top: 70px; padding: 8px; left: 25px;}
+
+}
+@media (max-width:991px) {
+  .headerOuterMost{left: 50%; transform: translateX(-50%); max-width: 440px; width: 100%;; }
+  
+}
+@media (max-width:640px) {
+  .hideOnMobile{display: none;}
+  .headerOuterMost{width: auto;}
+  .firstSpan {margin-top: 2px;}
+}
+@media (max-width:500px) {
+  .headerOuterMost{ top: 18px;}
+}

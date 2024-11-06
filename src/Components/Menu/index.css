@@ -1,0 +1,47 @@
+.menuBar{padding: 24px;}
+.menuBarLeftOuterMost{ max-width:calc(100% - 770px ); width: 100%;  }
+.outerMost{height: 100%; max-width:calc(100% - 800px ); width: 100%; position: fixed;}
+.menubarImage{height: 100vh; width: 100% }
+.menuHead{bottom: 0; left: 90px;}
+.menuBarRightOuterMost{justify-content: center; display: flex; max-width: 751px; width: 100%;border: 1px solid #efe7d24d;padding: 80px 64px;}
+.menuItems{border: 1px solid #efe7d24d; padding: 8px 10px;}
+.menuItems:hover{background: #efe7d224;  border: 1px solid #f5f2EAB3;}
+.menuRight{width: 100%;}
+.cuisine{padding: 64px 0 0;}
+.cuisineImage{max-width:150px ; height: 100px; width: 100%;}
+.line{ height: 1px; flex:1 0 0px;  margin: 15px;  border-bottom: 1px dotted #efe7d2}
+/* .squareIcon{border: 1px solid #efe7d24d ; height: 10px ;width: 10px; transform: rotate(45deg); margin: 8px;}
+.lineIcon{border: 1px solid #efe7d24d; transform:  rotate(90deg); }
+.cuisineHead {margin-left: 10px; margin-right: 10px;} */
+
+/* responsive */
+@media (max-width:1399px) {
+.menuBarLeftOuterMost{max-width: 100%;} 
+.outerMost{ max-width: calc(100% - 617px); height: 100%; width: 100%;} 
+.menuBarRightOuterMost{max-width: 100%; justify-content: center;}
+}
+@media (max-width: 1080px){
+.menuBar{ flex-direction: column;} 
+.outerMost{height: 100%; max-width:100%; width: 100%; position: relative; }
+.menuHead{left: 50%; transform: translateX(-50%);}
+}
+@media (max-width: 991px){ 
+.menuBar{ flex-direction: column;} 
+}
+@media (max-width: 767px){
+.menubarImage{height: 85vh; width: 100% }
+}
+@media (max-width: 640px){
+.cuisineItems{margin-top: 20px !important;}
+.cuisine {padding: 40px 0;}
+.menuBarRightOuterMost{padding: 50px 10px;}
+}
+@media(max-width:500px){
+.line{margin:12px;}
+.menubarImage{height: 65vh; width: 100% }
+.cuisine {padding: 35px 0;}
+}
+@media (max-width: 480px){
+    .menubarImage{height: 60vh;}
+}
+
