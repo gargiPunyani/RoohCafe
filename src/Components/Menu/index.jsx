@@ -5,11 +5,11 @@ import MenuRight from './MenuRight'
 
 const Menubar = () => {
   return (
-    <div className='menuBar dFlex container gap18'>
+    <div className='menuBar bg dFlex container gap18'>
       <div className='menuBarLeftOuterMost'>
       <MenuLeft/>
       </div>
-      <div className='menuBarRightOuterMost borderRadius12 '>
+      <div className='menuBarRightOuterMost  '>
       <MenuRight/>
       </div>
     </div>

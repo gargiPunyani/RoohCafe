@@ -5,7 +5,7 @@ import Footer from '../../../SharedComponents/Footer'
 const MenuRight = () => {
   return (
     <div className='menuRight'>
-        <div className='menuRightOuter'>
+        <div className='menuRightOuter borderRadius12'>
             <div className='menuRightInner'>
                 <div className='menuListItem'>
                     <ul className='font12 primaryColor dFlex uppercase pointer borderRadius8 gap8 aiCenter jCenter'>
@@ -18,20 +18,9 @@ const MenuRight = () => {
                 {Maki.map((item)=>{
                     return(
                     <div key={item.id} className='textCenter '>
-                         <div className='dFlex jCenter gap8'>
-                            <div className='squareIcon'>
-                            </div>
-                            <div className='lineIcon'>
-                                </div>
-
-                        <div className="cuisineHead uppercase h3 primaryColor">
+                         
+                            <div className="cuisineHead uppercase h3 primaryColor">
                             <h3>{item.heading}</h3>
-                        </div>
-                        <div className='lineIcon'>
-                        </div>
-                        <div className='squareIcon'>
-                            </div>
-                          
                         </div>
                             <div className='cuisineItems dFlex mt40 '>
                             <div className='cuisineImage'>
@@ -64,20 +53,9 @@ const MenuRight = () => {
                 {UraMaki.map((item)=>{
                     return(
                     <div key={item.id} className='textCenter '>
-                        <div className='dFlex jCenter gap8'>
-                            <div className='squareIcon'>
-                            </div>
-                            <div className='lineIcon'>
-                                </div>
-
-                        <div className="cuisineHead uppercase primaryColor">
+                        
+                            <div className="cuisineHead uppercase primaryColor">
                             <h2>{item.heading}</h2>
-                        </div>
-                        <div className='lineIcon'>
-                        </div>
-                        <div className='squareIcon'>
-                            </div>
-                          
                         </div>
                             <div className='cuisineItems dFlex mt40 '>
                             <div className='cuisineImage'>
@@ -110,20 +88,9 @@ const MenuRight = () => {
                 {Rolls.map((item)=>{
                     return(
                     <div key={item.id} className='textCenter '>
-                        <div className='dFlex jCenter gap8'>
-                            <div className='squareIcon'>
-                            </div>
-                            <div className='lineIcon'>
-                                </div>
-
-                        <div className="cuisineHead uppercase primaryColor">
+                        
+                            <div className="cuisineHead uppercase primaryColor">
                             <h2>{item.heading}</h2>
-                        </div>
-                        <div className='lineIcon'>
-                        </div>
-                        <div className='squareIcon'>
-                            </div>
-                          
                         </div>
                             <div className='cuisineItems dFlex mt40 '>
                             <div className='cuisineImage'>
@@ -154,8 +121,11 @@ const MenuRight = () => {
                 </div>
             </div>
         </div>
+        <div className='footer mt20'>
             <Footer/>
+            </div>
     </div>
+    
   )
 }
 

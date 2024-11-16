@@ -1,8 +1,8 @@
 .homeOuter{padding: 14px 9px;}
-.container{max-width: 1680px; width: 100% ;height:auto;}
-.homeLeft{max-width: calc( 100% - 358px ) ;}
+.container{max-width: 1680px; width: 100% ;height:100%;}
+.homeLeft{max-width: calc( 100% - 370px ) ; width: 100%; }
 .homeVideo{width: 100%;}
-.homeVideo{ width: 100% ; height: 685px; }
+.homeVideo{ width: 100% ; height: 700px; }
 .homeVideo video{ width: 100%; height: 100%;}
 .homeHead{bottom: 30px; padding: 30px; left: 50px;}
 .homeSocial{background: rgba(10, 11, 10);bottom: -6px;right: -7px;height: 55px;padding: 13px; width: 125px; gap: 10px;}
@@ -11,7 +11,7 @@
 /* HomeRight */
 .menuImage {height: 215px; width:100%; opacity: .6;}
 .menuImage:hover{opacity: 1;}
-.homeRight{width: 340px; }
+.homeRight{max-width: 345px ;width: 100%; height: 700px;overflow-x: hidden; overflow-y: scroll;  scrollbar-color: transparent  transparent; }
 .btnV1{max-width: 100%; width: 100%;}
 .homeRightButtons{background: rgb(10, 11,10); bottom: -6px; right: -3px; padding: 8px 6px 0 16px; border: none;}
 .arrowRight{ border:1px solid #efe7d2; border-radius: 50%; height: 20px; width: 20px;}
@@ -48,7 +48,7 @@
     .about{width: 100%;}
     .aboutImage {max-width: 100%;}
     .homeRight{max-width: 100%; height: auto;}
-    .homeVideo{height: 400px;}
+    .homeVideo{height: 517px;}
 }
 @media (max-width: 480px){
     .btnV1{width: 100%;}

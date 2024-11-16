@@ -6,7 +6,7 @@ import "../index.css";
 const MenuLeft = () => {
   return (
     <div className="outerMost ">
-      <div className="menubarImage relative">
+      <div className="menubarImage objectFit relative">
         <img className="borderRadius16 " src={menuImage} alt="menubar" />
       </div>
       <Navbar />

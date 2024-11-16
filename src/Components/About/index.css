@@ -1,0 +1,52 @@
+.aboutOuterMost{height: 100%; max-width: 760px; width: 100%;}
+.aboutUsImage{height: 100%; width: 100%;}
+.aboutUsSection{height: 100%;}
+.aboutUs{padding: 10px 9px; height: 100vh;}
+.aboutLeftOuterMost{height: 100%; max-width: 760px; width: 100%;}
+.aboutRightOuterMost{max-width: 760px; width: 100%; padding: 15px;}
+.abooutRightTop{ border: 1px solid #efe7d24d; padding: 15px;}
+.sliderContent{ width: 100%;}
+.slickSlider{max-width: 320px; height: 187px;width: 100%;}
+.aboutHead{bottom: 0px; left: 90px;}
+.sliderImages{height: 187px; width: 100%;}
+.slick-next{right: 0 !important}
+.slick-prev { left: 0px !important; z-index: 999}
+.reviewsGiven{max-width: 760px; width: 100%;}
+.reviewOuter{ width: 100%;}
+.review{max-width: calc(100% / 3 - 10.7px) ;padding: 20px; width:100%; border: 1px solid #efe7d24d;}
+.fontStar{padding: 10px;}
+.story{max-width: 4000px; width: 100%; border: 1px solid #efe7d24d; padding: 20px; min-height: 187px;} 
+
+/* responsive */
+@media (max-width:1600px) {
+    .reviewsGiven{ max-width: 100%; width: 100%; }
+    
+}
+@media (max-width:1200px) {
+    .aboutUsSection{flex-direction: column;}
+    .aboutLeftOuterMost , .aboutUsImage , .aboutOuterMost {max-width: 100%; width: 100%;}
+    .aboutRight{min-height: 300px; height: 100%;}
+    .sliderImages{height: 300px;}
+    .story{min-height: 300px; height: 100%;}
+    .slickSlider{max-width: calc(100% / 2 - 16px);}
+    .aboutRightOuterMost{max-width: 100%;}
+}
+@media (max-width:991px) {
+.aboutHead{bottom: 0px; left: 50%; transform: translateX(-50%);}
+    
+}
+@media (max-width: 640px){
+    .aboutUs{padding: 0;}
+    .aboutRight{flex-direction: column;}
+    .slickSlider , .review{max-width: 100%; margin-bottom: 10px;}
+    .aboutStory , .reviewInner{flex-direction: column;}
+    .sliderImages{height:200px;}
+    .aboutOuterMost , .aboutLeftOuterMost {height: 80vh;}
+    /* .menuHead{bottom: 135px;} */
+    
+}
+@media (max-width:490px) {
+    .aboutOuterMost , .aboutLeftOuterMost {height: 60vh;}   
+    /* .menuHead{bottom: 250px;} */
+
+}

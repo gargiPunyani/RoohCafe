@@ -10,194 +10,266 @@ import food9 from "../Assests/images/foodItem9.webp";
 import food10 from "../Assests/images/foodItem10.webp";
 import food11 from "../Assests/images/foodItem11.webp";
 import food12 from "../Assests/images/foodItem12.webp";
+// import { faInstagram, faXTwitter } from "@fortawesome/free-brands-svg-icons";
+// import { icon } from "@fortawesome/fontawesome-svg-core";
 
 export const Cuisine = [
-    {
+  {
     Maki: [
       {
         id: 1,
         image: food1,
         name: "Spicy Tuna Maki",
-        aboutDish:     "A tantalizing blend of spicy tuna, cucumber, and avocado, harmoniously rolled in nori and seasoned rice.",
+        aboutDish:
+          "A tantalizing blend of spicy tuna, cucumber, and avocado, harmoniously rolled in nori and seasoned rice.",
         price: 200,
       },
       {
         id: 2,
         image: food2,
         name: "Mango Maki",
-        aboutDish:     "A tantalizing blend of spicy tuna, cucumber, and avocado, harmoniously rolled in nori and seasoned rice.",
+        aboutDish:
+          "A tantalizing blend of spicy tuna, cucumber, and avocado, harmoniously rolled in nori and seasoned rice.",
         price: 200,
       },
       {
         id: 3,
         image: food3,
         name: "Salmon Maki",
-        aboutDish:     "A tantalizing blend of spicy tuna, cucumber, and avocado, harmoniously rolled in nori and seasoned rice.",
+        aboutDish:
+          "A tantalizing blend of spicy tuna, cucumber, and avocado, harmoniously rolled in nori and seasoned rice.",
         price: 200,
       },
       {
         id: 4,
         image: food4,
         name: "Tuna Maki",
-        aboutDish:     "A tantalizing blend of spicy tuna, cucumber, and avocado, harmoniously rolled in nori and seasoned rice.",
+        aboutDish:
+          "A tantalizing blend of spicy tuna, cucumber, and avocado, harmoniously rolled in nori and seasoned rice.",
         price: 200,
       },
-    ]},
-    {
+    ],
+  },
+  {
     UraMaki: [
       {
         id: "a1",
         image: food5,
         name: "Volcano Delight",
-        aboutDish:     "Creamy crab salad, avocado, and cucumber rolled inside, topped with spicy tuna and drizzled with fiery sriracha sauce..",
+        aboutDish:
+          "Creamy crab salad, avocado, and cucumber rolled inside, topped with spicy tuna and drizzled with fiery sriracha sauce..",
         price: 400,
       },
       {
         id: "a2",
         image: food6,
         name: "Volcano Delight",
-        aboutDish:     "Creamy crab salad, avocado, and cucumber rolled inside, topped with spicy tuna and drizzled with fiery sriracha sauce..",
+        aboutDish:
+          "Creamy crab salad, avocado, and cucumber rolled inside, topped with spicy tuna and drizzled with fiery sriracha sauce..",
         price: 400,
       },
       {
         id: "a3",
         image: food7,
         name: "Volcano Delight",
-        aboutDish:     "Creamy crab salad, avocado, and cucumber rolled inside, topped with spicy tuna and drizzled with fiery sriracha sauce..",
+        aboutDish:
+          "Creamy crab salad, avocado, and cucumber rolled inside, topped with spicy tuna and drizzled with fiery sriracha sauce..",
         price: 400,
       },
       {
         id: "a4",
         image: food8,
         name: "Volcano Delight",
-        aboutDish:     "Creamy crab salad, avocado, and cucumber rolled inside, topped with spicy tuna and drizzled with fiery sriracha sauce..",
+        aboutDish:
+          "Creamy crab salad, avocado, and cucumber rolled inside, topped with spicy tuna and drizzled with fiery sriracha sauce..",
         price: 400,
       },
-    ]},
-    {
+    ],
+  },
+  {
     Rolls: [
       {
         id: "b1",
         image: food9,
         name: "Spicy Tuna Maki",
-        aboutDish:     "A tantalizing blend of spicy tuna, cucumber, and avocado, harmoniously rolled in nori and seasoned rice.",
+        aboutDish:
+          "A tantalizing blend of spicy tuna, cucumber, and avocado, harmoniously rolled in nori and seasoned rice.",
         price: 900,
       },
       {
         id: "b2",
         image: food10,
         name: "Spicy Tuna Maki",
-        aboutDish:     "A tantalizing blend of spicy tuna, cucumber, and avocado, harmoniously rolled in nori and seasoned rice.",
+        aboutDish:
+          "A tantalizing blend of spicy tuna, cucumber, and avocado, harmoniously rolled in nori and seasoned rice.",
         price: 900,
       },
       {
         id: "b3",
         image: food11,
         name: "Spicy Tuna Maki",
-        aboutDish:     "A tantalizing blend of spicy tuna, cucumber, and avocado, harmoniously rolled in nori and seasoned rice.",
+        aboutDish:
+          "A tantalizing blend of spicy tuna, cucumber, and avocado, harmoniously rolled in nori and seasoned rice.",
         price: 900,
       },
       {
         id: "b4",
         image: food12,
         name: "Spicy Tuna Maki",
-        aboutDish:     "A tantalizing blend of spicy tuna, cucumber, and avocado, harmoniously rolled in nori and seasoned rice.",
+        aboutDish:
+          "A tantalizing blend of spicy tuna, cucumber, and avocado, harmoniously rolled in nori and seasoned rice.",
         price: 900,
       },
-    ]}
-
+    ],
+  },
 ];
 export const Maki = [
-   
   {
     id: 1,
-    heading:"maki",
+    heading: "maki",
     image: food1,
     name: "Spicy Tuna Maki",
-    aboutDish: "A tantalizing blend of spicy tuna, cucumber, and avocado, harmoniously rolled in nori and seasoned rice.",
+    aboutDish:
+      "A tantalizing blend of spicy tuna, cucumber, and avocado, harmoniously rolled in nori and seasoned rice.",
     price: 200,
   },
   {
     id: 2,
     image: food2,
     name: "Mango Maki",
-    aboutDish: "A tantalizing blend of spicy tuna, cucumber, and avocado, harmoniously rolled in nori and seasoned rice.",
+    aboutDish:
+      "A tantalizing blend of spicy tuna, cucumber, and avocado, harmoniously rolled in nori and seasoned rice.",
     price: 200,
   },
   {
     id: 3,
     image: food3,
     name: "Salmon Maki",
-    aboutDish: "A tantalizing blend of spicy tuna, cucumber, and avocado, harmoniously rolled in nori and seasoned rice.",
+    aboutDish:
+      "A tantalizing blend of spicy tuna, cucumber, and avocado, harmoniously rolled in nori and seasoned rice.",
     price: 200,
   },
   {
     id: 4,
     image: food4,
     name: "Tuna Maki",
-    aboutDish: "A tantalizing blend of spicy tuna, cucumber, and avocado, harmoniously rolled in nori and seasoned rice.",
+    aboutDish:
+      "A tantalizing blend of spicy tuna, cucumber, and avocado, harmoniously rolled in nori and seasoned rice.",
     price: 200,
   },
 ];
 export const UraMaki = [
   {
     id: "a1",
-    heading:"Uramaki",
+    heading: "Uramaki",
     image: food5,
     name: "Volcano Delight",
-    aboutDish: "Creamy crab salad, avocado, and cucumber rolled inside, topped with spicy tuna and drizzled with fiery sriracha sauce..",
+    aboutDish:
+      "Creamy crab salad, avocado, and cucumber rolled inside, topped with spicy tuna and drizzled with fiery sriracha sauce..",
     price: 400,
   },
   {
     id: "a2",
     image: food6,
     name: "Volcano Delight",
-    aboutDish: "Creamy crab salad, avocado, and cucumber rolled inside, topped with spicy tuna and drizzled with fiery sriracha sauce..",
+    aboutDish:
+      "Creamy crab salad, avocado, and cucumber rolled inside, topped with spicy tuna and drizzled with fiery sriracha sauce..",
     price: 400,
   },
   {
     id: "a3",
     image: food7,
     name: "Volcano Delight",
-    aboutDish: "Creamy crab salad, avocado, and cucumber rolled inside, topped with spicy tuna and drizzled with fiery sriracha sauce..",
+    aboutDish:
+      "Creamy crab salad, avocado, and cucumber rolled inside, topped with spicy tuna and drizzled with fiery sriracha sauce..",
     price: 400,
   },
   {
     id: "a4",
     image: food8,
     name: "Volcano Delight",
-    aboutDish: "Creamy crab salad, avocado, and cucumber rolled inside, topped with spicy tuna and drizzled with fiery sriracha sauce..",
+    aboutDish:
+      "Creamy crab salad, avocado, and cucumber rolled inside, topped with spicy tuna and drizzled with fiery sriracha sauce..",
     price: 400,
   },
 ];
 export const Rolls = [
   {
     id: "b1",
-    heading:"Special Rolls",
+    heading: "Special Rolls",
     image: food9,
     name: "Sunrise Bliss",
-    aboutDish: "A tantalizing blend of spicy tuna, cucumber, and avocado, harmoniously rolled in nori and seasoned rice.",
+    aboutDish:
+      "A tantalizing blend of spicy tuna, cucumber, and avocado, harmoniously rolled in nori and seasoned rice.",
     price: 900,
   },
   {
     id: "b2",
     image: food10,
     name: "Mango Tango",
-    aboutDish: "A tantalizing blend of spicy tuna, cucumber, and avocado, harmoniously rolled in nori and seasoned rice.",
+    aboutDish:
+      "A tantalizing blend of spicy tuna, cucumber, and avocado, harmoniously rolled in nori and seasoned rice.",
     price: 900,
   },
   {
     id: "b3",
     image: food11,
     name: "Truffle Indulgence",
-    aboutDish: "A tantalizing blend of spicy tuna, cucumber, and avocado, harmoniously rolled in nori and seasoned rice.",
+    aboutDish:
+      "A tantalizing blend of spicy tuna, cucumber, and avocado, harmoniously rolled in nori and seasoned rice.",
     price: 900,
   },
   {
     id: "b4",
     image: food12,
     name: "Pacific Firecracker",
-    aboutDish: "A tantalizing blend of spicy tuna, cucumber, and avocado, harmoniously rolled in nori and seasoned rice.",
+    aboutDish:
+      "A tantalizing blend of spicy tuna, cucumber, and avocado, harmoniously rolled in nori and seasoned rice.",
     price: 900,
   },
+];
+export const review = [
+  {
+    id: "i",
+    name: "Trip Advisor",
+    review: "best Sushi",
+  },
+  {
+    id: "ii",
+    name: "Michelin Guide",
+    review: "Quality Food",
+  },
+  {
+    id: "iii",
+    name: "Start Dining",
+    review: "Cool vibe",
+  },
+];
+export const dateTime = [
+  { id: 1, day: "Mon" },
+  { id: 2, day: "Tue" },
+  { id: 3, day: "Wed" },
+  { id: 4, day: "Thu" },
+  { id: 5, day: "Fri" },
+  { id: 6, day: "Sat" },
+  { id: 7, day: "Sun" },
+];
+export const location = [
+  {
+    id: "ai",
+    contact: "Address",
+    details: "The Landmark, C-303, Kudasan, Gandhinagar, Gujarat 382421",
+  },
+  {
+    id: "aii",
+    contact: "Contact",
+    details: "+91 063562 23322",
+    
+  },
+  {
+    id: "aiii",
+    contact: "email",
+    details: "roohtheroofyardcafe@gmail.com",
+  },
+ 
 ];

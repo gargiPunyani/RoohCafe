@@ -14,7 +14,7 @@ const Home1 = () => {
       <div className="homeWrapper container">
       <div className="homeOuter dFlex gap18">
         <div className="homeLeft">
-          <div className="homeInner">
+          <div className="homeInner ">
             <div className="homeVideo relative objectFit borderRadius16 pointer">
               <video src={bgVideo} type="video" autoPlay loop muted></video>
 
@@ -44,11 +44,13 @@ const Home1 = () => {
             </div>
           </div>
         </div>
-       <div>
+       <div className="homeRight">
         <HomeRight/>
        </div>
       </div>
+      <div className="mt20">
         <Footer/>
+      </div>
       </div>
       <div>
       </div>

@@ -1,0 +1,30 @@
+.eventLeft , .eventRight{ max-width: calc(100% / 2 ); width: 100%; height: 100%;} 
+.eventOuterMost , .eventOuter, .eventROuterMost, .eventROuter , .eventRInner {height: 100%; width: 100%;}
+.event{height: 100vh; padding:20px 0}
+.eventOuterMost{max-width: 48%; width: 100%; position: fixed;}
+.eventSec2 {max-width: 60%; width: 100%; height: 230px;}
+.eventSlider{height: 230px;}
+.text2{width: 100%; max-width: 40%; height: 230px; border: 1px solid #efe7d24d; padding: 8px; overflow-x:hidden ; scrollbar-color: transparent transparent;}
+
+/* responsive */
+
+@media (max-width:1200px) {
+.eventLeft , .eventRight{ max-width: 100%; width: 100%; height: 100%;} 
+.eventOuterMost{max-width: 100%; width: 100%; position: relative;}
+   .galleryMain{flex-direction: column;}
+   .text2, .eventSec2 , .eventSlider {height: 280px;}
+}
+@media (max-width:991px) {
+    .text2, .eventSec2 , .eventSlider {height: 250px;}
+    .event{padding: 0;}
+}
+@media (max-width:786px) {
+    .text2, .eventSec2 {max-width: 100%; width: 100%;}
+    .eventImages, .roohEventSlick{flex-direction: column;}
+    .celebrities{order:0}
+    .eventReviews{order:1}
+    
+}
+
+
+
