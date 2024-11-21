@@ -1,19 +1,10 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCalendar } from "@fortawesome/free-regular-svg-icons";
-import Footer from "../../../SharedComponents/Footer";  // Make sure this is correctly imported
+import { db } from "../../../Firebase";
+import { collection, addDoc } from "firebase/firestore";
+import Footer from "../../../SharedComponents/Footer";
 import { useFormik } from "formik";
 import { reservationSchema } from "./schema";
-// import { reservationSchema } from "./schema";
-
-// import React from "react";
-// import { date, number } from "yup";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faCalendar } from "@fortawesome/free-regular-svg-icons/faCalendar";
-// import { db } from "../../../Firebase";
-// import Footer from "../../../SharedComponents/Footer"
-// import { reservationSchema } from "./schema";
-// import { useFormik } from "formik";
+import { number } from "yup";
 
 const initialValues = {
   name: "",
@@ -25,15 +16,35 @@ const initialValues = {
   message: "",
 };
 const TableRight = () => {
+  // const reservationCollection = new CollectionReference(db, "reservationQuery");
+
   const { values, errors, handleBlur, touched, handleChange, handleSubmit } =
     useFormik({
-      initialValues:initialValues,
+      initialValues: initialValues,
       validationSchema: reservationSchema,
-      onSubmit: (values, action) => {
-        console.log(values.name)
+
+      onSubmit: async (values, action) => {
+        const { name, email, number, people, date, time, message } = values;
+      
+        addDoc(collection(db, "reservations"), {
+          name,
+          email,
+          number,
+          people,
+          date,
+          time,
+          message,
+        })
+          .then((res) => {
+            console.log("Document successfully added:", res.id);
+          })
+          .catch((err) => {
+            console.error("Error adding document:", err);
+          });
+
         action.resetForm();
-        // console.log(values, action);
-        alert("submitted");
+        alert("Submitted");
+        alert("Our manager will contact you soon");
       },
     });
 
@@ -66,9 +77,11 @@ const TableRight = () => {
                   onBlur={handleBlur}
                   placeholder="Your Name"
                 />
-                  {errors.name && touched.name ? (
-                    <p className="validationError reservationError">{errors.name} </p>
-                  ) : null}
+                {errors.name && touched.name ? (
+                  <p className="validationError reservationError">
+                    {errors.name}{" "}
+                  </p>
+                ) : null}
               </div>
               <div className="borderRadius8 mt20">
                 <input
@@ -80,9 +93,11 @@ const TableRight = () => {
                   onBlur={handleBlur}
                   placeholder="Your email"
                 />
-                  {errors.email && touched.email ? (
-                    <p className="validationError reservationError">{errors.email} </p>
-                  ) : null}
+                {errors.email && touched.email ? (
+                  <p className="validationError reservationError">
+                    {errors.email}{" "}
+                  </p>
+                ) : null}
               </div>
               <div className="borderRadius8 mt20">
                 <input
@@ -94,9 +109,11 @@ const TableRight = () => {
                   onBlur={handleBlur}
                   placeholder="Your Number"
                 />
-                  {errors.number && touched.number ? (
-                    <p className="validationError reservationError">{errors.number} </p>
-                  ) : null}
+                {errors.number && touched.number ? (
+                  <p className="validationError reservationError">
+                    {errors.number}{" "}
+                  </p>
+                ) : null}
               </div>
               <div className="reservationInput  dFlex gap12 secondaryColor">
                 <div className="resevationDetails borderRadius8 mt20">
@@ -107,31 +124,33 @@ const TableRight = () => {
                     type="number"
                     onChange={handleChange}
                     onBlur={handleBlur}
-                    placeholder="1-10"
+                    placeholder="Number of people 1-10"
                     max={10}
                     min={0}
                   />
-                    {errors.people && touched.people ? (
-                      <p className="validationError reservationError">{errors.people} </p>
-                    ) : null}
+                  {errors.people && touched.people ? (
+                    <p className="validationError reservationError">
+                      {errors.people}{" "}
+                    </p>
+                  ) : null}
                 </div>
                 <div className="resevationDetails mt20 ">
-                
-                    <input 
-                   
-                      id="myDate"
-                      className="inputForm borderRadius8 myDate pointer dateInput"
-                      name="date"
-                      value={values.date}
-                      type="date"
-                      onChange={handleChange}
-                      onBlur={handleBlur}
-                      placeholder="dd--mm--yy"
-                    />                 
+                  <input
+                    id="myDate"
+                    className="inputForm borderRadius8 myDate pointer dateInput"
+                    name="date"
+                    value={values.date}
+                    type="date"
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    placeholder="dd--mm--yy"
+                  />
                   {errors.date && touched.date ? (
-                    <p className="validationError reservationError">{errors.date} </p>
+                    <p className="validationError reservationError">
+                      {errors.date}{" "}
+                    </p>
                   ) : null}
-                  </div>
+                </div>
                 <div className="resevationDetails borderRadius8 mt20">
                   <input
                     className="myTime inputForm borderRadius8 pointer"
@@ -142,9 +161,11 @@ const TableRight = () => {
                     onBlur={handleBlur}
                     placeholder="--:--"
                   />
-                    {errors.time && touched.time ? (
-                      <p className="validationError reservationError">{errors.time} </p>
-                    ) : null}
+                  {errors.time && touched.time ? (
+                    <p className="validationError reservationError">
+                      {errors.time}{" "}
+                    </p>
+                  ) : null}
                 </div>
               </div>
               <div className="borderRadius8 mt20">

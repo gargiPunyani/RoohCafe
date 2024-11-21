@@ -1,5 +1,6 @@
 .tableLeft, .tableRight{max-width: calc(100% / 2 - 8px); width: 100%; }
-.bookTableImage{height: 100%; filter: brightness(50%);}
+.bookTableImage, .tableOuterMost {height: 100%; width: 100%;}
+.bookTableImage{filter: brightness(50%);}
 .tableLeftOuter{height: 100%;}
 .reservationOuter ,.reseveTable{border: 1px solid #efe7d24d; }
 .reserveTable, .reservationOuter {padding: 20px;}
@@ -14,11 +15,10 @@
 .myDate{  appearance: none;  -webkit-appearance: none; position: relative; } 
 .myDate::-webkit-calendar-picker-indicator{opacity: 0; display: block; position: absolute; right: 10px; width: 20px; height: 100%; cursor: pointer;}
 .myDate::before{ content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="rgb(247, 245, 238)" viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-1.99.9-1.99 2L3 20c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zM7 12h5v5H7z"/></svg>');
-position: absolute; right: 10px; top: 50%; transform: translateY(-50%);
-}
-.bookHead{bottom: 50px; left: 90px;}
+position: absolute; right: 10px; top: 50%; transform: translateY(-50%);}
+.bookHead{bottom: 0px; left: 90px;}
 .submit{width: 100%; padding: 20px; background-color: #EFE7D2; outline: none; border: none;}
-.reservationError{color: red; margin-left: 10px;}
+.reservationError{color: red; padding: 10px;}
 .resevationDetails{max-width: calc(100% / 3 - 4px); width: 100%;}
 .reservationInput {max-width: 100%;}
 .myTime{ appearance: none;  -webkit-appearance: none; position: relative; } 
@@ -33,23 +33,21 @@ position: absolute; right: 10px; top: 50%; transform: translateY(-50%);
 .tableLeftOuter{height: 80vh;}
 .tableLeft, .reservationInput, .tableRight , .resevationDetails{max-width: 100%; width: 100%; }
 .reservationInput{flex-direction: column;}
-.bookHead{bottom:150px; left: 50%; transform: translateX(-50%);}
+.bookHead{bottom:0px; left: 50%; transform: translateX(-50%);}
+.myTime::before{left: 96% ;}
 }
 @media (max-width:991px) {
 .reserveTable{padding: 0;}
-.bookHead{bottom: 170px;}
+.bookHead{bottom: 0px;}
 
 }
 @media (max-width:786px){
 .tableLeftOuter {height: 75vh;}
-.bookHead{bottom: 200px;}
+.bookHead{bottom: 0px;}
 
-}
-@media (max-width: 680px) {
-.bookHead{bottom: 100px;}
 }
 @media (max-width:480px) {
 .tableLeftOuter {height: 60vh;}
-.bookHead{bottom: 180px;}
+.bookHead{bottom: 0px;}
     
 }

@@ -5,8 +5,8 @@ import BookTable from "../../../Assests/images/bookTable.jpeg";
 const TableLeft = () => {
   return (
     <div className=" tableLeftOuter">
-      <div className="contactOuterMost ">
-        <div className="contactUsImage bookTableImage relative objectFit">
+      <div className="tableOuterMost relative">
+        <div className="contactUsImage bookTableImage objectFit">
           <img className="borderRadius16 " src={BookTable} alt="menubar" />
         </div>
         <Navbar />

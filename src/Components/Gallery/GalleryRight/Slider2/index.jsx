@@ -20,7 +20,7 @@ const GallerySlider2 = () => {
         cssEase: "linear",
       };
   return (
-    <div className="slider-container borderRadius12 objectFit">
+    <div className="slider-container  borderRadius12 objectFit">
     <Slider {...settings}>
       <div className="gallerySlider " >
           <img className='borderRadius12' src={image1} alt='gallerySlider1'/>

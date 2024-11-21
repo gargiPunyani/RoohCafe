@@ -8,7 +8,7 @@
 .gallerySec1 {max-width: 40%; width: 100%; height: 255px; padding: 20px;}
 .gallerySec2{max-width: 60%; width: 100%; height: 255px;}
 .gallerySlider{height: 255px;}
-.gallerySlick{max-width: 50%; width: 100%;}
+.gallerySlick{max-width: 50%; width: 100%; }
 .customers{overflow-x:hidden ; height: 255px; padding: 10px; max-width: 50%; width: 100%; }
 .text1{border: 1px solid #efe7d24d; padding: 12px;overflow-x:hidden ; scrollbar-color: transparent transparent;}
 .gallerySlick:hover ,  .gallerySec2:hover , .sliderSide:hover{ transform: scale(1.01); filter:opacity(.7);}

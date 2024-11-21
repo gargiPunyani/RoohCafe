@@ -9,7 +9,7 @@ const GalleryLeft = () => {
       <img className="borderRadius16 " src ={GalleryImage} alt="menubar" />
     </div>
     <Navbar />
-    <div className="aboutHead uppercase letterSpace5 h1 absolute primaryColor">
+    <div className="menuHead uppercase letterSpace5 h1 absolute primaryColor">
       <h1>Gallery</h1>
     </div>
   </div>

@@ -2,6 +2,8 @@ import React from 'react'
 import menuImage from "../../../Assests/images/menu-main.webp";
 import reservation from "../../../Assests/images/bookTable2.jpeg";
 import about from "../../../Assests/images/teamHome.jpeg"
+import contact from "../../../Assests/images/contactHome.jpeg"
+import galleryHome from "../../../Assests/images/galleryHome.JPG"
 import { Link } from 'react-router-dom';
 
 const HomeRight = () => {
@@ -61,6 +63,7 @@ const HomeRight = () => {
     </Link>
     </div>
     <div className="about btnV1 relative">
+      <Link className='link' to={"/events"}>
       <div className="aboutImage menuImage transition">
         <img
           src={about}
@@ -70,7 +73,7 @@ const HomeRight = () => {
       </div>
       <div className="aboutButton">
         <button className="homeRightButtons transition borderRadius8 uppercase pointer absolute primaryColor font16  dFlex gap12">
-          <span> Our Team </span>
+          <span> Events </span>
           <span className="arrowContainer">
             <svg className="feather feather-arrow-right arrow firstArrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" >
               <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -83,11 +86,12 @@ const HomeRight = () => {
           </span>
         </button>
       </div>
+      </Link>
     </div>
     <div className="menu btnV1 relative">
       <Link to="/contact" className='link'>
       <div className="menuImage transition">
-        <img src={menuImage} className="borderRadius12 objectFit" alt="menuImage"
+        <img src={contact} className="borderRadius12 objectFit" alt="contactImage"
         />
       </div>
       <div className="menuButton">
@@ -107,10 +111,10 @@ const HomeRight = () => {
       </div>
       </Link>
     </div>
-    <div className="menu btnV1 relative">
+    <div className="reservation btnV1 relative">
       <Link to="/gallery" className='link'>
       <div className="menuImage transition">
-        <img src={menuImage} className="borderRadius12 objectFit" alt="menuImage"
+        <img src={galleryHome} className="borderRadius12 objectFit" alt="menuImage"
         />
       </div>
       <div className="menuButton">

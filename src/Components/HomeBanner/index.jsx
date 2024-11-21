@@ -37,7 +37,7 @@ const Home1 = () => {
               </div>
               <div className="homeHead h1 primaryColor uppercase letterSpace8 absolute lh12">
                 <h1>
-                  Sushi <br />
+                  Rooh <br />
                   Sensation
                 </h1>
               </div>

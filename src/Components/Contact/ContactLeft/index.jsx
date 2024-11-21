@@ -5,8 +5,8 @@ import ContactImage from '../../../Assests/images/contactMain.JPG'
 const ContactLeft = () => {
   return (
     <div className='contactLeftOuter' > 
-        <div className="contactOuterMost relative ">
-    <div className="contactUsImage objectFit">
+        <div className="contactOuterMost ">
+    <div className="contactUsImage relative objectFit">
       <img className="borderRadius16 " src ={ContactImage} alt="menubar" />
     </div>
     <Navbar />

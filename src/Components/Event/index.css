@@ -1,30 +1,81 @@
-.eventLeft , .eventRight{ max-width: calc(100% / 2 ); width: 100%; height: 100%;} 
-.eventOuterMost , .eventOuter, .eventROuterMost, .eventROuter , .eventRInner {height: 100%; width: 100%;}
-.event{height: 100vh; padding:20px 0}
-.eventOuterMost{max-width: 48%; width: 100%; position: fixed;}
-.eventSec2 {max-width: 60%; width: 100%; height: 230px;}
-.eventSlider{height: 230px;}
-.text2{width: 100%; max-width: 40%; height: 230px; border: 1px solid #efe7d24d; padding: 8px; overflow-x:hidden ; scrollbar-color: transparent transparent;}
+.eventTopOuter{height: 75vh; width: 100%; }
+.eventTopInner , .eventTopImage{height: 100%; width: 100%;}
+.eventTopImage{background: url(../../Assests/images/roohImages.jpeg); filter: brightness(75%); z-index: 0;}
+.eventBottomInner{width: 30%;  height:300px ; overflow-x: hidden; overflow-y: scroll;  scrollbar-color: transparent  transparent;}
+.eventBottomInner , .celebrityVisit, .eventBInner{ padding:20px ; background: rgb(10, 11, 10) ; border: 1px solid #efe7d24d;}
+.celebrityVisit {width: 25%; height: 275px; overflow-x: hidden; overflow-y: scroll;  scrollbar-color: transparent  transparent;} 
+.eventHappens {width: 40%; height: 300px;}
+.eventHappening{width: 40% ; height: 275px;}
+.celebrityCame{width: 50% ;height: 275px;}
+.eventBInner{height: 275px; width: 30%;  overflow-x: hidden; overflow-y: scroll;  scrollbar-color: transparent  transparent;} 
+.celebration{width: 30%;  height: 275px;}
+.specialPerson{display: none;}
+.eventSlider{height: 450px; width: 96%; padding: 10px; border: 1px solid #efe7d24d ; overflow-x: hidden; overflow-y: overlay;}
+.eventSliderImage{height: 300px; }
+.eventHappeningSoon{margin: 20px;}
+.eventBooking{display: none;}
+/* .upcomingEventDate{top: 20px; left: 30px;} */
+.upcomingEventBook{top: 12px; right: 30px; display: none;}
+.eventSlider:hover{
+.eventSliderImage{filter: blur(10px); transition: all .3s ease-in-out; -moz-transition: all .3s ease-in-out; -webkit-transition: all .3s ease-in-out; -o-transition: all .3s ease-in-out;}
+.eventBooking{display: block; top: 40%; left: 10%; transform: translateY(-60%);} }
+.eventDatePrice{padding-right: 10px;}
+.eventBook{width: 120px; margin-left: 50%; transform: translateX(-50%); }
+.upcomingEventSlider .slick-prev:before, .slick-next:before{ font-size: 30px;}
 
 /* responsive */
+@media (max-width:1300px) {
+    .celebrityVisit, .eventBottomInner {width: 33%;}
+    .eventSlider:hover{
+    .eventBooking{ left: 1%;} }
 
+    /* .eventBHead{margin-top: 20px;} */
+}
 @media (max-width:1200px) {
-.eventLeft , .eventRight{ max-width: 100%; width: 100%; height: 100%;} 
-.eventOuterMost{max-width: 100%; width: 100%; position: relative;}
-   .galleryMain{flex-direction: column;}
-   .text2, .eventSec2 , .eventSlider {height: 280px;}
+    /* .eventBHead{margin-top: 20px;} */
+    .celebrityCame{width: 50%;}
 }
-@media (max-width:991px) {
-    .text2, .eventSec2 , .eventSlider {height: 250px;}
-    .event{padding: 0;}
-}
-@media (max-width:786px) {
-    .text2, .eventSec2 {max-width: 100%; width: 100%;}
-    .eventImages, .roohEventSlick{flex-direction: column;}
-    .celebrities{order:0}
-    .eventReviews{order:1}
+@media (max-width:1090px) {
+    .roohEvent1Image , .roohEvent2Image{display: none;}
+    .eventHappens, .eventBottomInner ,  .eventBottomInner ,  .celebrityVisit, .eventHappening , .celebration , .eventBInner{width: 50%;}
+    .specialPerson{display: block;}
+    .specialPeople{display: none !important;}
+    .event2, .event4{order: 0;}
+    .event1, .event3 {order: 1;} 
+    .event5{order: 2;}
+    .event6{order: 3;}
+    .roohInsideCeleb{flex-wrap: wrap;}
+    .celebrityVisit{width: 48%;}
+    .eventSlider:hover{
+        .eventBooking{ left: 4%;} }
     
 }
-
-
-
+@media (max-width:829px) {
+    .celebrityVisit{width: 46%;}
+    
+}
+@media (max-width:680px) {
+    .eventBottom{flex-direction: column;}
+    .eventHappens, .eventBottomInner , .celebrityCame, .eventBottomInner ,  .celebrityVisit, .eventHappening , .celebration , .eventBInner{width: 100%;}
+    .eventBottomInner , .celebrityVisit, .eventBInner{ padding:15px}
+    .event2{order: 1;}
+    .event1{order: 0;}   
+    .event5{order: 3;}
+    .event6{order: 2;}  
+    .roohEvent2Image{display: block;}
+    .eventTopOuter { height: 60vh;}
+    .eventBInner{  overflow-x: hidden; overflow-y:hidden ;  scrollbar-color: transparent  transparent; }
+    /* .specialPerson2{display: none;} */
+    .eventBottomInner , .eventBInner, .celebrityVisit {max-height: 450px; height: 100%; }
+    .eventSlider:hover{display: none; }
+    .upcomingEventBook{display: block;}
+}
+@media (max-width:480px) {
+    /* .eventBottomInner , .celebrityVisit , .eventBInner {max-height: 230px; height: 100%; } */
+    .eventBottomInner , .celebrityVisit, .eventBInner{ padding:6px}
+}
+@media (max-width:400px) {
+    .eventSlider:hover{
+        .eventBooking{ left: 7%;} }
+    
+}
