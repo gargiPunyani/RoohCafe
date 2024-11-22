@@ -22,7 +22,7 @@
 /* responsive */
 @media (max-width:1399px) {
 .menuBarLeftOuterMost{max-width: 100%;}
-.outerMost{ max-width: calc(100% - 680px); height: 100%; width: 100%;}
+.outerMost{ max-width: calc(100% - 730px); height: 100%; width: 100%;}
 .menuBarRightOuterMost{max-width: 100%; justify-content: center;}
 }
 @media (max-width: 1299px) {
@@ -39,6 +39,7 @@
 .menuHead{left: 50%; transform: translateX(-50%);}
 .menuRight {width: 760px;}
 .menuBarRightOuterMost{padding: 62px 52px;}
+.menuRightOuter{padding: 40px 60px;}
 .cuisine {padding: 40px 8px;}
 
 }
@@ -46,6 +47,8 @@
 .menuBar{ flex-direction: column;} 
 .outerMost{height: 100%; max-width:100%; width: 100%; position: relative; }
 .menuHead{left: 50%; transform: translateX(-50%); bottom: 30px;}
+.menuBarRightOuterMost{padding: 40px;}
+
 }
 @media (max-width: 991px){ 
 .menuBar{ flex-direction: column;} 
@@ -59,7 +62,7 @@
 .cuisineItems{margin-top: 20px !important; flex-direction: column;}
 .cuisine {padding: 40px 8px;}
 .menuBarRightOuterMost{padding: 50px 30px;}
-.cuisineImage {max-width: 100%;height: 100%;width: 100%;}
+.cuisineImage {max-width: 100%;height: 180px; width: 100%;}
 }
 @media(max-width:500px){
 .line{margin:12px;}

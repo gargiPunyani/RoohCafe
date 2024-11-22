@@ -16,12 +16,13 @@
 .eventBooking{display: none;}
 /* .upcomingEventDate{top: 20px; left: 30px;} */
 .upcomingEventBook{top: 12px; right: 30px; display: none;}
-.eventSlider:hover{
-.eventSliderImage{filter: blur(10px); transition: all .3s ease-in-out; -moz-transition: all .3s ease-in-out; -webkit-transition: all .3s ease-in-out; -o-transition: all .3s ease-in-out;}
-.eventBooking{display: block; top: 40%; left: 10%; transform: translateY(-60%);} }
+.eventSlider:hover{ display: block;
+ .eventBooking{display: block; top: 40%; left: 10%; transform: translateY(-60%);} 
+.eventSliderImage{filter: blur(10px); transition: all .3s ease-in-out; -moz-transition: all .3s ease-in-out; -webkit-transition: all .3s ease-in-out; -o-transition: all .3s ease-in-out;}}
 .eventDatePrice{padding-right: 10px;}
 .eventBook{width: 120px; margin-left: 50%; transform: translateX(-50%); }
-.upcomingEventSlider .slick-prev:before, .slick-next:before{ font-size: 30px;}
+.upcomingEventSlider .slick-prev:before, .upcomingEventSlider .slick-next:before{ font-size: 30px;}
+
 
 /* responsive */
 @media (max-width:1300px) {
@@ -52,6 +53,8 @@
 }
 @media (max-width:829px) {
     .celebrityVisit{width: 46%;}
+    .eventSlider:hover{display: none; }
+    .upcomingEventBook{display: block;}
     
 }
 @media (max-width:680px) {
@@ -73,9 +76,4 @@
 @media (max-width:480px) {
     /* .eventBottomInner , .celebrityVisit , .eventBInner {max-height: 230px; height: 100%; } */
     .eventBottomInner , .celebrityVisit, .eventBInner{ padding:6px}
-}
-@media (max-width:400px) {
-    .eventSlider:hover{
-        .eventBooking{ left: 7%;} }
-    
 }

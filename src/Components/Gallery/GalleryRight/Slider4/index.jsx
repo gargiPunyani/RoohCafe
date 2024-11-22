@@ -21,7 +21,7 @@ const GallerySlider4 = () => {
       slidesToScroll: 1
       };
   return (
-    <div className="slider-container objectFit">
+    <div className="slider-container galleryContainer objectFit">
     <Slider {...settings}>
       <div className="gallerySlider">
           <img className='borderRadius12' src={image1} alt='gallerySlider1'/>

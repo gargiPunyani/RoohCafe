@@ -44,7 +44,7 @@ const TableRight = () => {
 
         action.resetForm();
         alert("Submitted");
-        alert("Our manager will contact you soon");
+        alert("Our team will contact you soon");
       },
     });
 

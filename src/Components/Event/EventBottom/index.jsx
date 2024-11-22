@@ -8,7 +8,9 @@ import roohEvent5 from "../../../Assests/images/event5.JPG";
 import roohEvent6 from "../../../Assests/images/event7.JPG";
 import roohEvent7 from "../../../Assests/images/gallery4.JPG";
 import roohEvent8 from "../../../Assests/images/gallery5.JPG";
-import UpcomingEvents from "../Slider";
+import roohEvent9 from "../../../Assests/images/event15.jpeg"
+
+import UpcomingEvents from "./Slider";
 import Footer from "../../../SharedComponents/Footer";
 
 const EventBottom = () => {
@@ -43,18 +45,18 @@ const EventBottom = () => {
             </div>
             <div className="roohButtons dFlex gap18 mt25 jCenter aiCenter">
               <div className="galleryBtn">
-                <Link className="link" to="/gallery">
                   <button className="bookTableBtn primaryColor borderRadius8 font14">
+                <Link className="link bookTableButton" to="/gallery">
                     Gallery
-                  </button>
                 </Link>
+                  </button>
               </div>
               <div className="galleryBtn">
-                <Link className="link" to="/contact">
                   <button className="bookTableBtn primaryColor borderRadius8 font14">
+                  <Link className="link bookTableButton" to="/contact">
                     Contact Us
-                  </button>
                 </Link>
+                  </button>
               </div>
             </div>
           </div>
@@ -193,21 +195,22 @@ const EventBottom = () => {
             </div>
           </div>
           <div className="celebration event5 borderRadius8 objectFit">
-            <img src={roohEvent7} alt="event3" />
+            <img src={roohEvent9} alt="event3" />
           </div>
           <div className="celebrityVisit event6 borderRadius8 dFlex flexColumn">
             <div className="h4 eventBHead textCenter ">
-              <h4>Baby Shower Celebrations </h4>
+              <h4>Valentine Week Celebrations </h4>
             </div>
             <div className="font16 mt10 lh12 textJustify">
               <p>
-                "Celebrate the joy of a new beginning with a beautiful baby
-                shower at our café! With a charming ambiance, delightful décor,
-                and delicious treats, we create the perfect setting for this
-                special occasion. Whether it’s an intimate gathering or a grand
-                celebration, our team ensures every detail is thoughtfully
-                planned to make your day unforgettable. Let us help you shower
-                love and happiness in style!"
+                "Join us for a week filled with romance, delicious treats, and
+                unforgettable moments. From February 7th to 14th, we’re offering
+                special themed menu items, cozy ambiance, and exciting
+                activities to make this season of love extra special. Whether
+                you're sharing a sweet moment with a loved one or enjoying time
+                with friends, our café is the perfect place to celebrate. Don't
+                miss our exclusive Valentine’s Day specials and surprises – love
+                is in the air, and we can't wait to share it with you!"
               </p>
             </div>
           </div>

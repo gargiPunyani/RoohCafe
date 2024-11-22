@@ -3,7 +3,8 @@
 .headerOuterMost{display: flex; background: rgba(10, 11, 10); top: 70px; padding: 8px; left: 65px;}
 .headerLogo{height: 40px;}
 .logo img{height: 100%;}
-.bookTableBtn{padding: 14px 16px; background: #18181880; border: 1px solid #efe7d24d ;}
+.bookTableBtn{padding: 14px 0 ; background: #18181880; border: 1px solid #efe7d24d ;}
+.bookTableButton{padding: 14px 16px;}
 .navmenu{padding: 2px; background: #18181880; border: 1px solid #efe7d24d; }
 .headerListItem:hover{color: #f5f2eab3; 
 .firstSpan{transform: translateY(11px); opacity: 0;} 
@@ -15,16 +16,15 @@
 .firstSpan, .secondSpan, .thirdSpan {border: 1px solid #EFE7D2; width: 28px;}
 .firstSpan{margin-top: 2px;}
 .sideHeaderListItem{width: 50px; top: 0; left: 50px; height: 50px;}
-.firstSideSpan , .secondSideSpan{height: 1px; width: 40px; background: #f5f2eab3; margin-top: 15px; }
+.firstSideSpan , .secondSideSpan{height: 1px; width: 40px; background: #f5f2eab3; }
 .sideNavbar{display: none;} 
 .firstSideSpan{transform: rotate(45deg); }
 .secondSideSpan{transform: rotate(-45deg);}
 .sidebar, .sideBarInner{height: 100%; width: 100%;}
 .sideBarInner{border: 1px solid #efe7d24d; padding:20px ; background:url(../../Assests/images/menuBg.avif); opacity: .7;}
-.sideItems{opacity: 1;}
-.sideNavbarOuter{padding: 20px; position: fixed; top: 0; right: 0; max-width: 100%; width: 100%; height: 100%;  z-index: 99; background: rgba(10, 11, 10); display: flex; flex-direction: column; align-items: center; justify-content: center; transform: translateX(-100%);}
-.sideNavbarOuter.open { transform: translateX(0); 
-}
+.sideItems{opacity: 1; }
+.sideNavbarOuter{padding: 20px; position: fixed; top: 0; right: 0; max-width: 100%; width: 100%; height: 100%;  z-index: 99999; background: rgba(10, 11, 10); display: flex; flex-direction: column; align-items: center; justify-content: center; transform: translateX(-100%);}
+.sideNavbarOuter.open { transform: translateX(0);}
 .sidebarMenu{margin-top: 50px;}
 
 /* responsive */
@@ -45,6 +45,10 @@
   .firstSpan {margin-top: 2px;}
   .bookTableBtn{padding: 12px;}
   /* .headerOuterMost { width: 100%; max-width: 55%;} */
+}
+@media (max-width:598px) {
+  .bookTableButton{padding: 14px 0;}
+  
 }
 @media (max-width:534px) {
   .headerOuterMost { width: 100%; max-width: 53%;}

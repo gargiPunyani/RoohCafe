@@ -2,6 +2,7 @@ import React from "react";
 import GallerySlider2 from "./Slider2";
 import GallerySlider3 from "./Slider3";
 import GallerySlider4 from "./Slider4";
+import Footer from "../../../SharedComponents/Footer"
 
 const GalleryRight = () => {
   return (
@@ -80,34 +81,11 @@ const GalleryRight = () => {
             </div>
           </div>
 
-          {/* <div className='galleryImages dFlex gap16 mt20'>
-              <div className='gallerySec2 transition objectFit'>
-                <img className='borderRadius12' src={image5} alt='gallerySecctionImage'/>
-              </div>
-              <div className='gallerySec1 transition objectFit'>
-                <img className='borderRadius12' src={image4} alt='gallerySectionImages'/>
-              </div>
-          </div>
-           <div className='galleryImages dFlex mt20 gap16'>
-              <div className='gallerySec1 transition objectFit'>
-                <img className='borderRadius12' src={image8} alt='gallerySectionImages'/>
-              </div>
-              <div className='gallerySec2 transition objectFit'>
-                <img className='borderRadius12' src={image6} alt='gallerySecctionImage'/>
-              </div>
-          </div>
-          <div className='roohGallerySlick dFlex gap12 mt20 objectFit'>
-            <div className='gallerySlick transition '>
-            <GallerySlider2/>
-            </div>
-            <div className='sliderSide transition borderRadius12'>
-              <img src={image7} />
-
-            </div>
-           
-          </div> */}
-        </div>
+        <div className="footer mt25">
+          <Footer/>
+          </div> 
       </div>
+        </div>
     </div>
   );
 };

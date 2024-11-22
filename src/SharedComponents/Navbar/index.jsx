@@ -40,7 +40,7 @@ const Navbar = () => {
             <li className= "headerItem hideOnMobile transition borderRadius12 primaryColor h6 "><Link className="link" to="/menu">Menu</Link></li>
             <li className= "headerItem hideOnMobile transition borderRadius12 primaryColor h6"><Link className="link" to="/about">About</Link></li>
             <li className= "bookTable primaryColor overflow">
-         <button className= "bookTableBtn  transition primaryColor pointer borderRadius12 font14"> <Link className="link" to="/reservation">Book A Table</Link></button>
+         <button className= "bookTableBtn  transition primaryColor pointer borderRadius12 font14"> <Link className="link bookTableButton" to="/reservation">Book A Table</Link></button>
 
             </li>
             </ul> 
@@ -52,17 +52,17 @@ const Navbar = () => {
           <nav className="sideBarInner bg borderRadius12 transition" style={{ display: sideNavbar ? 'block' : 'none' }}>
             <div className="sidebar" >
               <ul className= "sideNavbar dFlex flexColumn sideHeaderStart relative gap25 aiCenter transition jCenter"  >
-              <li className="sideHeaderListItem headerListItem absolute transition borderRadius8 navmenu dFlex flexColumn relative gap8" onClick={hideSidebar}>
+              <li className="sideHeaderListItem headerListItem absolute transition borderRadius8 navmenu dFlex flexColumn jCenter relative gap8" onClick={hideSidebar}>
             <span className="firstSideSpan absolute transition"></span>
             <span className="secondSideSpan absolute "></span>
             </li>
             <li className="h2 sideItems sidebarMenu"> <Link className="link" to= "/menu">Menu </Link></li>
-            <li className="h2 sideItems"><Link className="link" to="/about">About</Link></li>
-            <li className= "bookTable h2 sideItems primaryColor overflow"> <Link className="link" to="/reservation">Book A Table</Link>
+            <li className="h2 sideItems "><Link className="link" to="/about">About</Link></li>
+            <li className= "bookTable h2 sideItems  primaryColor overflow"> <Link className="link" to="/reservation">Book A Table</Link>
             </li>
-            <li className="h2 sideItems"><Link className="link" to='/gallery' >Gallery</Link></li>
-            <li className="h2 sideItems"><Link className="link" to='/contact' >Contact Us</Link></li>
-            <li className="h2 sideItems"><Link className="link" to='/events' >Events</Link></li>
+            <li className="h2 sideItems "><Link className="link" to='/gallery' >Gallery</Link></li>
+            <li className="h2 sideItems "><Link className="link" to='/contact' >Contact Us</Link></li>
+            <li className="h2 sideItems "><Link className="link" to='/events' >Events</Link></li>
 
               </ul>
             </div>

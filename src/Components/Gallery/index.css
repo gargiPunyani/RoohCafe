@@ -12,6 +12,7 @@
 .customers{overflow-x:hidden ; height: 255px; padding: 10px; max-width: 50%; width: 100%; }
 .text1{border: 1px solid #efe7d24d; padding: 12px;overflow-x:hidden ; scrollbar-color: transparent transparent;}
 .gallerySlick:hover ,  .gallerySec2:hover , .sliderSide:hover{ transform: scale(1.01); filter:opacity(.7);}
+ .galleryContainer{z-index: -1; position: relative;}
 
 /* responsive */
 @media (max-width:1200px) {
