@@ -1,0 +1,144 @@
+@media (min-width:1680px) {
+    .resevationDetails {
+        max-width: 100%;
+    }
+    
+    .reservationOuter {
+        height: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .reservationRight {
+        height: 100%;
+    }
+    
+    .tableReservation {
+        height: 100%;
+    }
+    
+    .container {
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
+    
+    .contactRightOuter {
+        height: 100%;
+    }
+    
+    .contactRightInner {
+        max-width: 100%;
+        width: 100%;
+        height: calc(100vh/2 - 15px);
+    }
+    .mapLocation {
+        max-width: 100%;
+        height: calc(93vh/2 - 80px);
+    }
+    
+    .foodItemImage {
+        height: calc(50vh / 2 - 15px);
+        width: 100%;
+    }
+    
+    .openTimeOuter {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .openTimeInner {
+        width: 100%;
+    }
+    
+    
+    .openTimeOuter, .addressInner {
+        padding: 20px;
+    }
+    
+    .openTime {
+        height: calc(100vh / 2 - 16px);
+    }
+    
+    ul.sideNavbar.dFlex.flexColumn.sideHeaderStart.relative.gap25.aiCenter.transition.jCenter {}
+    
+    .sidebar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    ul.sideNavbar {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+}
+.aboutRightOuterMost {
+    max-width: calc(100% / 2 - 18px);
+}
+
+.aboutLeftOuterMost {
+    max-width: calc(100% / 2 - 18px);
+}
+
+.aboutOuterMost {max-width: 100%;}
+
+.aboutRightOuter {
+    width: 100%;
+    max-width: 100%;
+}
+
+.abooutRightTop {
+    max-width: calc(100% / 2 - 16px);
+    width: 100%;
+}
+
+.slickSlider {
+    max-width: calc(100% / 2 - 16px);
+    width: 100%;
+}
+.reviewsGiven {
+    max-width: 100%;
+    width: 100%;
+}
+.aboutRightOutMost {
+    height: 100%;
+}
+
+.aboutRightOuterMost {
+    height: 100vh;
+}
+
+.aboutRightOuter {
+    height: 100%;
+}
+.abooutRightTop {
+    height: calc(100vh / 3 - 20px);
+}
+
+.slickSlider {
+    height: calc(100vh / 3 - 20px);
+}
+
+.sliderImages {
+    height: calc(100vh / 3 - 20px);
+    width: 100%;
+}
+.abooutRightTop {
+    height: calc(100vh / 3 - 20px);
+}
+
+.sliderImages {
+    height: calc(100vh / 3 - 20px);
+}
+
+.story {
+    height: calc(100vh / 3 - 20px);
+}

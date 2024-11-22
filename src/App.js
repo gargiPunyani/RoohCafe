@@ -7,6 +7,7 @@ import Contact from './Components/Contact'
 import BookTable from './Components/BookTable'
 import Gallery from './Components/Gallery'
 import Event from './Components/Event'
+import "./MinWidth/index.css"
 
 const App = () => {
   return (
