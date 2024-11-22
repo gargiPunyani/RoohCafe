@@ -111,9 +111,9 @@ const HomeRight = () => {
       </div>
       </Link>
     </div>
-    <div className="reservation btnV1 relative">
+    <div className="reservation galleryHome btnV1 relative">
       <Link to="/gallery" className='link'>
-      <div className="menuImage transition">
+      <div className="menuImage galleryHomeImage transition">
         <img src={galleryHome} className="borderRadius12 objectFit" alt="menuImage"
         />
       </div>
